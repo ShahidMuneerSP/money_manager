@@ -24,7 +24,7 @@ class _ScreenCategoryState extends State<ScreenCategory> with SingleTickerProvid
         TabBar(
           controller: _tabController,
           labelColor: Colors.black,
-          unselectedLabelColor: Colors.blueGrey,
+          unselectedLabelColor: Colors.grey,
           tabs: [
           Tab(text: 'INCOME'),
           Tab(text: 'EXPENSE'),

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:money_manager_flutter/db/category/category_db.dart';
-import 'package:money_manager_flutter/modals/category/category_model.dart';
 import 'package:money_manager_flutter/screens/add_transaction/screen_add_transaction.dart';
 import 'package:money_manager_flutter/screens/category/category_add_popup.dart';
 import 'package:money_manager_flutter/screens/category/screen_category.dart';
@@ -19,7 +17,7 @@ class ScreenHome extends StatelessWidget{
   Widget build(BuildContext context) {
 
     return  Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor:Colors.blueGrey,
       appBar: AppBar(
         backgroundColor: Colors.purple,
         title: Text(
@@ -28,7 +26,8 @@ class ScreenHome extends StatelessWidget{
         centerTitle: true,
       ),
       bottomNavigationBar: MoneyManagerBottomNavigation(),
-      body: SafeArea(
+      body: 
+      SafeArea(
         child: ValueListenableBuilder(
           builder: (BuildContext context,int updatedIndex, Widget? _) {
             return _pages[updatedIndex];
